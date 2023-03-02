@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "f0d4bce5-f9b0-41bf-8890-eb10e9d68749",
+		"name": "Updating API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25900276"
+	},
+	"item": [
+		{
+			"name": "mine 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code should be 200\", function () {\r",
+							"pm.test(\"Status code name should be OK\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.kickresume.com/dashboard/resumes/",
+					"protocol": "https",
+					"host": [
+						"www",
+						"kickresume",
+						"com"
+					],
+					"path": [
+						"dashboard",
+						"resumes",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
